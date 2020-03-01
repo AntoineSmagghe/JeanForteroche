@@ -20,7 +20,7 @@ class Manager{
 			$password = 'bofighthe';
 			$db = new PDO('mysql:host=' . $host . ';dbname=' . $database . ';charset=' . $charset, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 		} catch(Exception $e) {
-			throw new Exception("Identification server incorrect. veuillez vérifier vos login et mot de passe de connexion à la base de donnée.");
+			throw new Exception("Identification server incorrect. veuillez vérifier vos login et mot de passe de connexion à la base de donnée." . $e);
 		}
 		
         return $db;

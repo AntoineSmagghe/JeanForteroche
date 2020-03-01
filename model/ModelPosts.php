@@ -7,8 +7,8 @@ class ModelPosts extends Manager{
     //TAKE 5 POSTS
     public function takePosts(){
         $db = $this->connectDB();
-        $req = $db->prepare('SELECT id, title, text, DATE_FORMAT(date, "le %d %b %Y à %H:%i") AS datePost FROM oui.posts ORDER BY date DESC LIMIT ?');
-        $req->execute(array(3));
+        $req = $db->prepare('SELECT id, title, text, DATE_FORMAT(date, "le %d %b %Y à %H:%i") AS datePost FROM oui.posts ORDER BY date DESC LIMIT 3');
+        $req->execute();
         
         return $req;
     }
@@ -16,8 +16,8 @@ class ModelPosts extends Manager{
     //TAKE 1 POST WHEN SCROLL
     public function takePostWhenScroll($number){
         $db = $this->connectDB();
-        $req = $db->prepare('SELECT id, title, text, DATE_FORMAT(date, "le %d %b %Y à %H:%i") AS datePost FROM oui.posts ORDER BY date DESC LIMIT ?, 1');
-        $req->execute(array($number));
+        $req = $db->prepare('SELECT id, title, text, DATE_FORMAT(date, "le %d %b %Y à %H:%i") AS datePost FROM oui.posts ORDER BY date DESC LIMIT :number, 1');
+        $req->execute(array('number' => $number));
 
         return $req;
     }
