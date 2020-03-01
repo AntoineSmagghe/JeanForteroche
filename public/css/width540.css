@@ -1,0 +1,42 @@
+@media screen and (max-width: 540px){
+    /************
+    *   HEAD    *
+    *************/
+    .width75{
+        width: calc(100% - 30px);
+    }
+
+    /************
+    *   TITLE   *
+    *************/
+    .title-page{
+        font-size: 1.6rem;
+    }
+
+    .img_cover{
+        height: 275px;
+    }
+
+    .img_cover h1{
+        font-size: 3rem;
+    }
+
+    /*article*/
+    .post_home_view{
+        width: calc(100% - 20px);
+        margin: 10px 0;
+    }
+
+    /*comment*/
+    #add_comment{
+        width: calc(100% - 10px);
+    }
+
+    #comment_under_post{
+        width: 100%;
+    }
+
+    #write_comment{
+        width: 100%;
+    }
+}

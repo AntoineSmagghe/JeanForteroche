@@ -1,0 +1,90 @@
+@media screen and (max-width: 900px){
+    /************
+    *   HEAD    *
+    *************/
+    .width75{
+        width: 90%;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header p{
+        display: none;
+    }
+
+    header h2{
+        font-size: 1.8rem;
+    }
+
+    #menu_minwidth{
+        display: block;
+        margin: 20px;
+    }
+
+    #menu_maxwidth{
+        display: none;
+        margin: 15px 30px 15px 0px;
+        font-size: 1.2rem;
+        flex-direction: column;
+    }
+
+    #menu_maxwidth li{
+        width: 140px;
+        height: 40px;
+    }
+
+    /************
+    *   TITLE   *
+    *************/
+    .title_page{
+        text-align: center;
+    }
+
+    .title_page_admin{
+        font-size: 1.6rem;
+    }
+
+    #signalements_page h2{
+        margin: 0 20px 20px 20px;
+        font-size: 1.2rem;
+    }
+    
+    /************
+    *   ARTICLE *
+    *************/
+    
+    .post_home_view{
+        min-width: 200px;
+    }
+
+    /*commentaires*/
+    #comment_under_post{
+        width: 90%;
+    }
+    .validate{
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    .del{
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    .signal{
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    .modify{
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    #signalements_page{
+        width: 100%;
+    }
+
+}
